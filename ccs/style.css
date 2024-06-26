@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(245, 216, 247);
+}
+.pseudoelemento-after::after{
+    content: "Es en línea (inline) de forma predeterminada.";
+    background-color: #ffba10;
+    border-color: black;
+    border-style: dotted;
+  }
+
+  .pseudoelemento-before:before {
+    content: "crea un pseudoelemento que es el primer hijo del elemento seleccionado.";
+    background-color: aquamarine;
+    border-color: black;
+    border-style: double;
+  }
+
+  .pseudoelemento-first-letter::first-letter {
+    font-size: 35px;
+    color: blueviolet;
+  }
+
+  .pseudoelemento-first-line::first-line {
+    text-decoration: overline;
+    color: blue;
+  }
+
+  .pseudoelemento-selecction::selection {
+    color: aliceblue;
+    background-color: blue;
+  }
+
+  .pseudoelemento-backdrop::backdrop {
+  }
+
+  input::placeholder {
+    color: darkorange;
+    font-size: 24;
+  }
+
+  ul li::marker{
+    color: coral;
+    font-size: 33px;
+  }
+  .pseudoelemento-pelling-error::spelling-error{
+    color: rgb(148, 5, 5);
+    background-color: rgb(234, 237, 240);
+  }
+  ::grammar-error {
+    text-decoration: underline rgb(223, 218, 218);
+    color: red;
+  }

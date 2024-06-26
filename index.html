@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <link rel="stylesheet" href="ccs/style.css" />
+</head>
+<body>
+    <h1>Práctica pseudoelementos</h1>
+    <section>
+    <h3>::after</h3>
+    <p class="pseudoelemento-after">pseudoelemento que es el último hijo del elemento seleccionado. Es comúnmente usado para agregar contenido cosmético a un elemento con la propiedad content. Es en línea (inline) de forma predeterminada.</p>
+    </section>
+
+    <section>
+        <h3>::before</h3>
+        <p class="pseudoelemento-before">crea un pseudoelemento que es el primer hijo del elemento seleccionado. Se usa normalmente para agregar contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.</p>
+    </section>
+
+    <section>
+        <h3>::first-letter</h3>
+        <p class="pseudoelemento-first-letter"> Aplica estilos a la primera letra de la primera línea un elemento de bloque, sólo cuando no es precedido de otro contenido (como imágenes o tablas).</p>
+    </section>
+    <section>
+        <h3>::first-line</h3>
+        <p class="pseudoelemento-first-line"> aplica estilos a la primera línea de un elemento de bloque. Nótese que la longitud de la primera línea depende de muchos factores, incluyendo el ancho del elemento, el ancho del documento y el tamaño de fuente del texto.</p>
+    </section>
+    <section>
+        <h3>::selecction</h3>
+        <p class="pseudoelemento-selecction"> aplica estilos a la parte de un documento que ha sido resaltada por el usuario (como hacer clic y arrastrar el ratón sobre el texto).</p>
+    </section>
+    <section>
+        <h3>::backdrop</h3>
+        <p class="pseudoelemento-backdrop">Cada uno de los elementos en la pila de la capa superior posee un . Este pseudo-elemento es una caja que se muestra inmediatamente debajo del elemento (y sobre el elemento inmediatamente inferior de la pila, si es que hay), dentro de dicha capa superior.</p>
+    </section>
+
+    <section>
+        <h3>::placeholder</h3>
+        <input placeholder="hola a todos!" />
+    </section>
+    
+    <section>
+        <h3>::marker</h3>
+        <p>selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o un número. Funciona en cualquier elemento o pseudoelemento configurado para display: list-item, como el elemento li y summary</p>
+            <ul>
+                <h4>Propiedades permitidas</h4>
+                <li>Todas las propiedades de fuentes.</li>
+                <li>Color</li>
+                <li>La propiedad text-combine-upright, unicode-bidiydirection</li>
+                <li>La propiedad content</li>
+              </ul>
+    </section>
+
+    <section>
+        <h3>::spelling-error</h3>
+        <p class="pseudoelemento-pelling-error">representa un segmento de texto que el agente de usuario ha marcado como eliminado incorrectamente.</p>
+    </section>
+
+    <section>
+        <h3>::grammar-error</h3>
+        <p>representa un segmento de texto que el agente de usuario ha marcado como gramaticalmente incorrecto.</p>
+        <p contenteditable spellcheck="true">
+           Todos los días vamos a nadar con mi hermana.
+          </p>
+
+    </section>
+
+
+</body>
+</html>
